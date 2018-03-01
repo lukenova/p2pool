@@ -18,7 +18,7 @@ RPC_CHECK = defer.inlineCallbacks(lambda bitcoind: defer.returnValue(
 SUBSIDY_FUNC = lambda height: 50*100000000 >> (height + 1)//840000
 POW_FUNC = lambda data: pack.IntType(256).unpack(__import__('ltc_scrypt').getPoWHash(data))
 BLOCK_PERIOD = 150 # s
-SYMBOL = 'LTC'
+SYMBOL = 'FAK'
 CONF_FILE_FUNC = lambda: os.path.join(os.path.join(os.environ['APPDATA'], 'Fakecoin') if platform.system() == 'Windows' else os.path.expanduser('~/Library/Application Support/Fakecoin/') if platform.system() == 'Darwin' else os.path.expanduser('~/.fakecoin'), 'fakecoin.conf')
 BLOCK_EXPLORER_URL_PREFIX = 'http://explorer.fakeco.in/block/'
 ADDRESS_EXPLORER_URL_PREFIX = 'http://explorer.fakeco.in/address/'
