@@ -1,3 +1,7 @@
+FORKED FROM ORIGINAL TO allow pool mining for FakeCoin http://fakco.in
+
+Original Text:
+
 Requirements:
 -------------------------
 Generic:
